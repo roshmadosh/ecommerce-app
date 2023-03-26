@@ -1,0 +1,29 @@
+﻿@model List<Actor>
+
+@{
+    ViewData["Title"] = "List of Actors";
+}
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-4 card" style="display: flex; border: none; margin-top: 60px; padding: 0 20px">
+                <div class="card-lhs"> 
+                    <img class="card-img monochrome" src="@item.ProfilePicture" alt="@item.FullName" style="max-width: 200px;"/>
+                    <h5 class="card-title" style="margin-top: .25rem">@item.FullName</h5>
+                    <p class="card-text" style="margin-bottom: .5rem">@item.Bio</p>
+                </div>
+                <div class="card-btns">
+                    <a class="btn btn-outline-primary"><i class="bi bi-pencil"></i></a>
+                    <a class="btn btn-outline-info"><i class="bi bi-info-lg"></i></a>
+                    <a class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                </div>
+            </div>
+            
+
+        }
+    </div>
+</div>
+    

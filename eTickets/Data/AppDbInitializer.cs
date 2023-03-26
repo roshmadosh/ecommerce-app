@@ -30,10 +30,10 @@ namespace eTickets.Data
                     context.Actors.AddRange(new List<Actor>() 
                     {
                         new Actor() { FullName = "Actor 1", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-1.jpeg" },
-                        new Actor() { FullName = "Actor 2", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-2.jpeg" },
-                        new Actor() { FullName = "Actor 3", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-3.jpeg" },
-                        new Actor() { FullName = "Actor 4", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-4.jpeg" },
-                        new Actor() { FullName = "Actor 5", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-5.jpeg" },
+                        new Actor() { FullName = "Chris Tucker", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-2.jpeg" },
+                        new Actor() { FullName = "Angelina Jolie", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-3.jpeg" },
+                        new Actor() { FullName = "Jim Carrey", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-4.jpeg" },
+                        new Actor() { FullName = "Will Smith", Bio = "This is a sample biography", ProfilePicture = "http://dotnethow.net/images/actors/actor-5.jpeg" },
                     });
                     context.SaveChanges();
                 }
