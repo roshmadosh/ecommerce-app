@@ -1,9 +1,7 @@
-﻿@model List<Actor>
-
+﻿@model List<Cinema>
 @{
-    ViewData["Title"] = "Actors";
+    ViewData["Title"] = "Cinemas";
 }
-
 
 <div class="container">
     <h2>@ViewData["Title"]</h2>
@@ -12,9 +10,9 @@
         {
             <div class="col-sm-4 card" style="display: flex; border: none; margin-top: 60px; padding: 0 20px">
                 <div class="card-lhs"> 
-                    <img class="card-img monochrome" src="@item.ProfilePicture" alt="@item.FullName" style="max-width: 200px;"/>
-                    <h5 class="card-title" style="margin-top: .25rem">@item.FullName</h5>
-                    <p class="card-text" style="margin-bottom: .5rem">@item.Bio</p>
+                    <img class="card-img" src="@item.Logo" alt="Logo" style="max-width: 200px;"/>
+                    <h5 class="card-title" style="margin-top: .25rem">@item.Name</h5>
+                    <p class="card-text" style="margin-bottom: .5rem">@item.Description</p>
                 </div>
                 <div class="card-btns">
                     <a class="btn btn-outline-primary"><i class="bi bi-pencil"></i></a>
@@ -25,4 +23,4 @@
         }
     </div>
 </div>
-    
+  

@@ -15,8 +15,9 @@ namespace eTickets.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var data = _context.Movies.ToListAsync();
-            return View();
+            var data = await _context.Movies.ToListAsync();
+            var sorted = data.OrderBy(movie => movie.EndDate).ToList();
+            return View(sorted);
         }
     }
 }

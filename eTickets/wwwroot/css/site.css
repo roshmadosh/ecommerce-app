@@ -22,3 +22,7 @@ body {
 .monochrome {
     filter: grayscale(100%);
 }
+
+.no-click {
+    pointer-events: none;
+}

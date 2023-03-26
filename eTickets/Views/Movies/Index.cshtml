@@ -1,0 +1,17 @@
+﻿@model List<Movie>
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <img 
+                src="@item.ImageURL"
+                class="col-sm-2 @(DateTime.Now > item.EndDate ? "monochrome no-click" : "")"
+                style="cursor: pointer; padding: 0; margin: 0 .75rem 30px 0.75rem"/>
+        }
+    </div>
+</div>
